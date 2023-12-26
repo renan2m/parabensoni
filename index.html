@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://kit.fontawesome.com/84b3504d67.js" crossorigin="anonymous"></script>
+  <meta data-n-head="1" data-hid="theme-color" name="theme-color" content="#ff5500">
+      <link rel="icon" type="image/x-icon" href="assets/img/oni.ico">
+  <title>Parabéns Oni!!!</title>
+</head>
+
+<body id="mainbody" style="overflow-x: hidden;">
+  <!-- class="overflowhi" -->
+  <div id="carregandodiv"
+    style="z-index: 99999; position: absolute; background-color: rgba(0, 0, 0, 0.952); width: 200vh; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div>
+      <h1 style="color: #ffffff; text-align: center;" id="txt">Carregando Conteúdo...</h1>
+      <p style="color: #ffffff; text-align: center; font-weight: 500;" id="loadingp">Aguarde!</p>
+    </div>
+  </div>
+  <script>
+    function removeOverflowhiClass() {
+      // Get the body element
+      const body = document.getElementById('mainbody');
+      body.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+      body.classList.add('overflowhi');
+      // Remove the "overflowhi" class after 10 seconds
+      setTimeout(() => {
+        body.classList.remove('overflowhi');
+        document.getElementById("carregandodiv").style.display = "none";
+      }, 20000);
+    }
+
+    // Call the function to remove the class after 10 seconds
+    removeOverflowhiClass();
+
+  </script>
+  <div class="mainvid">
+    <div id="mainVideo"></div>
+  </div>
+  <div>
+    <div class="mudtxt">
+      <h1>
+        Você é importante para muitas pessoas!</h1>
+      <p>Abaixo estão algumas delas, que decidiram lhe mandar um recado!</p>
+    </div>
+    <div class="parent">
+      <!-- preload="none" -->
+      <div class="div1 blockedbg divs">
+        <div class="overlay">
+          <img id="blob1" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock1" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video1" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div2 blockedbg divs">
+        <div class="overlay">
+          <img id="blob2" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock2" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video2" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div3 blockedbg divs">
+        <div class="overlay">
+          <img id="blob3" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock3" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video3" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div4 blockedbg divs">
+        <div class="overlay">
+          <img id="blob4" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock4" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video4" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div5 blockedbg divs">
+        <div class="overlay">
+          <img id="blob5" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock5" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video5" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div6 blockedbg divs">
+        <div class="overlay">
+          <img id="blob6" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock6" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video6" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div7 blockedbg divs">
+        <div class="overlay">
+          <img id="blob7" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock7" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video7" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div8 blockedbg divs">
+        <div class="overlay">
+          <img id="blob8" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock8" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video8" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div9 blockedbg divs">
+        <div class="overlay">
+          <img id="blob9" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock9" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video9" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div10 blockedbg divs">
+        <div class="overlay">
+          <img id="blob10" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock10" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video10" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div11 blockedbg divs">
+        <div class="overlay">
+          <img id="blob11" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock11" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video11" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div12 blockedbg divs">
+        <div class="overlay">
+          <img id="blob12" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock12" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video12" class="hidden videoframe"></div>
+      </div>
+
+      <div class="div13 blockedbg divs">
+        <div class="overlay">
+          <img id="blob13" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock13" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video13" class="hidden videoframe"></div>
+      </div>
+	  
+      <div class="div14 blockedbg divs">
+        <div class="overlay">
+          <img id="blob14" src="assets/img/animations/blobanimation.svg" alt="Blob" width="300px" height="300px"
+            style="display: block" />
+          <i id="lock14" class="fa-solid fa-lock fa-2xl"></i>
+        </div>
+        <div id="video14" class="hidden videoframe"></div>
+      </div>
+	  
+    </div>
+  </div>
+  <div style="display: none;" id="belowcontent">
+    <div class="mudtxt">
+      <h1>
+        Você acha que é só isso? Tem mais!</h1>
+      <p>Muitos mandaram um texto especial para você, eai?! Vai lá dar uma olhada!!</p>
+      <p style="font-size: small;">Clique em cima do texto para acessar a versão completa do mesmo.</p>
+    </div>
+    <div class="grid">
+      <div class="item">
+        <h2>Mensagem de Larinha</h2>
+        <p>Laninha laninha.. ficando mais idosinha.. brincadeira a parte! 
+		espero q a senhora tenha um otimo dia! q seja incrivel e maravilhoso  q nem a senhora..  
+		saiba q é uma pessoa q é mto admiravel, e tras mta alegria para nós, posso não aparecer mto, 
+		mas tenho ctz q a senhora vai mto longe, voa q nem foguete maninha!</p>
+      </div>
+      <div class="item">
+        <h2>Mensagem de Spacenerdice</h2>
+        <p>Oii senhora Lana Feliz Aniversário!!!! 🥳❤️ Nossa Oni maravilhosa, poderosa, lindona!! 
+		Te conheci através da senhora Misthy e foi um prazer enorme e ainda mais poder jogar contigo, 
+		uma pessoa divertida, auto astral, amo suas livezinha de terror os sustos da senhora são demais KKKKKK 
+        Te desejo tudo de ótimo senhora, muita saúde, alegria, amor, felicidades  e claro muitos jogos sempre!!! 
+        Te adoro senhora ❤️ Um grande abraço lindona!! </p>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title"></h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p id="modal-text"></p>
+          <p style="margin-top: 20px;">Clique no botão abaixo para ouvir o texto falado em voz alta:</p>
+          <button id="speak-button" class="ttsbutton">
+            TTS
+          </button>
+        </div>
+      </div>
+    </div>
+    <h1 style="text-align: center; color: #ffffff; margin-top: 100px;">FanArts</h1>
+    <div class="fanart-section">
+      <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">ladynoir0510</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1174810369148076064/Screenshot_20231116_092131_MediBang_Paint.jpg?ex=6568f26a&is=65567d6a&hm=69084443553d27fe6d16e0508c229732d0a2e43a6942852a98ea8a8816d64628&=&width=421&height=598"
+          data-modal="modal1">
+      </div>
+      <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">electroraioportugal</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1175074366166405170/b10cbc7a3396c362641c5b0d154b7de8_1.png?ex=6569e848&is=65577348&hm=93ffecf0d01b770df8291c2d67d2ef9807df65ea867204faaf48664e6c1a2d82&=&width=448&height=600"
+          data-modal="modal2">
+      </div>
+	  <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">emi__</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1175253111963652177/174_Sem_Titulo_20231117225524.png?ex=6598b341&is=65863e41&hm=e71cb35c077a10dfd7e4c31b78ab06af933e26dd445d188c0ed45106fbe97aa6&=&format=webp&quality=lossless&width=593&height=593"
+          data-modal="modal3">
+	  </div>
+	  <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">RLeona</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1178443106484506784/26_de_dezembro_20231126125604.png?ex=6591d92b&is=657f642b&hm=c5bc2869a584fc7f732bf4782c48ed7391b701236ce4c1e43bc2f9bea5ed17c4&=&format=webp&quality=lossless&width=390&height=593"
+          data-modal="modal4">
+	  </div>
+	  <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">RLeona</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1178443106849394828/26_de_dezembro_20231126130206.png?ex=6591d92b&is=657f642b&hm=a07a088cb943aa796e9f2d418d15dcd7c1dafd8cd69bca9c10ffe81f7d9505b3&=&format=webp&quality=lossless&width=390&height=593"
+          data-modal="modal5">
+	  </div>
+	  <div class="fanart-item">
+        <h1 style="text-align: center; color: #ffffff;">Chronos</h1><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1187143547581890652/lana.png?ex=6595d095&is=65835b95&hm=c171b3aa68973219cafc2fb0a3f02fb4d02b084ce3b992f6bb42587cc4852dc7&=&format=webp&quality=lossless&width=246&height=593"
+          data-modal="modal6">
+	  </div>
+    </div>
+
+    <div class="modal" id="modal1">
+      <div class="modal-content imgmodal-content1"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1174810369148076064/Screenshot_20231116_092131_MediBang_Paint.jpg?ex=6568f26a&is=65567d6a&hm=69084443553d27fe6d16e0508c229732d0a2e43a6942852a98ea8a8816d64628&=&width=421&height=598"></div>
+      <button class="modal-close">X</button>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content imgmodal-content2"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1175074366166405170/b10cbc7a3396c362641c5b0d154b7de8_1.png?ex=6569e848&is=65577348&hm=93ffecf0d01b770df8291c2d67d2ef9807df65ea867204faaf48664e6c1a2d82&=&width=448&height=600">
+      </div>
+      <button class="modal-close">X</button>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="modal-content imgmodal-content3"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1175253111963652177/174_Sem_Titulo_20231117225524.png?ex=6598b341&is=65863e41&hm=e71cb35c077a10dfd7e4c31b78ab06af933e26dd445d188c0ed45106fbe97aa6&=&format=webp&quality=lossless&width=593&height=593">
+      </div>
+      <button class="modal-close">X</button>
+    </div>
+	
+	<div class="modal" id="modal4">
+      <div class="modal-content imgmodal-content4"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1178443106484506784/26_de_dezembro_20231126125604.png?ex=6591d92b&is=657f642b&hm=c5bc2869a584fc7f732bf4782c48ed7391b701236ce4c1e43bc2f9bea5ed17c4&=&format=webp&quality=lossless&width=390&height=593">
+      </div>
+      <button class="modal-close">X</button>
+    </div>
+	
+	<div class="modal" id="modal5">
+      <div class="modal-content imgmodal-content5"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1178443106849394828/26_de_dezembro_20231126130206.png?ex=6591d92b&is=657f642b&hm=a07a088cb943aa796e9f2d418d15dcd7c1dafd8cd69bca9c10ffe81f7d9505b3&=&format=webp&quality=lossless&width=390&height=593">
+      </div>
+      <button class="modal-close">X</button>
+    </div>
+	
+	<div class="modal" id="modal6">
+      <div class="modal-content imgmodal-content6"><img
+          src="https://media.discordapp.net/attachments/1171912796540239904/1187143547581890652/lana.png?ex=6595d095&is=65835b95&hm=c171b3aa68973219cafc2fb0a3f02fb4d02b084ce3b992f6bb42587cc4852dc7&=&format=webp&quality=lossless&width=246&height=593">
+      </div>
+      <button class="modal-close">X</button>
+    </div>
+	
+    
+  </div>
+  <div class="sounds">
+    <audio id="newvideo" src="assets/videos/newvideo.mp3" preload="none"></audio>
+    <audio id="unlock" src="assets/videos/unlock.mp3" preload="none"></audio>
+  </div>
+
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/load.js"></script>
+  <script src="assets/js/youtube.js"></script>
+  <script src="assets/js/texthandler.js"></script>
+  <script src="assets/js/imagehandler.js"></script>
+  <script>
+    var tag = document.createElement('script');
+    const belowcontent = document.getElementById('belowcontent');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+      new YT.Player('mainVideo', {
+        height: '610',
+        width: '1080',
+        videoId: 'nKY2H1dRZXQ',
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(1);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video1', {
+        videoId: videoIds['video1'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(2);
+            }
+          }
+        }
+      });
+
+
+      new YT.Player('video2', {
+        videoId: videoIds['video2'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(3);
+            }
+          }
+        }
+      });
+
+
+      new YT.Player('video3', {
+        videoId: videoIds['video3'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(4);
+            }
+          }
+        }
+      });
+
+
+      new YT.Player('video4', {
+        videoId: videoIds['video4'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(5);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video5', {
+        videoId: videoIds['video5'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(6);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video6', {
+        videoId: videoIds['video6'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(7);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video7', {
+        videoId: videoIds['video7'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(8);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video8', {
+        videoId: videoIds['video8'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(9);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video9', {
+        videoId: videoIds['video9'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(10);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video10', {
+        videoId: videoIds['video10'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(11);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video11', {
+        videoId: videoIds['video11'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(12);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video12', {
+        videoId: videoIds['video12'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(13);
+            }
+          }
+        }
+      });
+
+      new YT.Player('video13', {
+        videoId: videoIds['video13'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              goToNextVideo(14);
+            }
+          }
+        }
+      });
+	  
+      new YT.Player('video14', {
+        videoId: videoIds['video14'],
+        events: {
+          'onStateChange': function (event) {
+            if (event.data == YT.PlayerState.ENDED) {
+              belowcontent.style.display = 'block';
+              belowcontent.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+              });
+            }
+          }
+        }
+      });
+      
+    }
+
+    function goToNextVideo(videoNumber) {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+      setTimeout(function () {
+        animations(`div${videoNumber}`, `lock${videoNumber}`, `blob${videoNumber}`);
+        videowatched(`div${videoNumber - 1}`);
+      }, 3000);
+    }
+  </script>
+</body>
+
+</html>
+        
